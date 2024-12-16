@@ -1,10 +1,16 @@
-import HomePage from "./components/HomePage";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Home from "./pages/Home";
+import RecipeDetails from "./pages/RecipeDetails";
 
 function App() {
+  app
   return (
-    <div className="flex">
-      <HomePage></HomePage>
-    </div>
+    <Router>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/recipes/:id" element={<RecipeDetails />} />
+      </Routes>
+    </Router>
   );
 }
 export default App;
