@@ -3,7 +3,6 @@ import Home from "./pages/Home";
 import RecipeDetails from "./pages/RecipeDetails";
 
 function App() {
-  app
   return (
     <Router>
       <Routes>
